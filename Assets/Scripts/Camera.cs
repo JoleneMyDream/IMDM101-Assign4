@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class camera : MonoBehaviour
+public class Camera : MonoBehaviour
 {
-    public GameObject targetPlayer; 
-    public Vector3 offset = new Vector3(0f, 10f, 0f);
+    public GameObject targetPlayer;
+    public Vector3 offset = new Vector3(0f, 10f, -5f);
+    public float smoothSpeed = 0.125f;
 
     void Start()
     {
@@ -12,12 +13,17 @@ public class camera : MonoBehaviour
 
     void LateUpdate()
     {
-    
-
         if (targetPlayer != null)
         {
-          
-            transform.position = targetPlayer.transform.position + offset;
+            
+            Vector3 playerForward = targetPlayer.transform.forward;
+
+
+            Vector3 desiredPosition = targetPlayer.transform.position +
+                                  new Vector3(0f, offset.y, offset.z);
+
+
+            transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
 
             
             transform.LookAt(targetPlayer.transform.position);
