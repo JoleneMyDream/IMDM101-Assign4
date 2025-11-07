@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BasicMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 3f;
 
     void Update()
     {

@@ -1,26 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class camera : MonoBehaviour
 {
-
-    public GameObject player;
-
-
-    private Vector3 offset;
-
+    public GameObject targetPlayer; 
+    public Vector3 offset = new Vector3(0f, 10f, 0f);
 
     void Start()
     {
-
-        offset = transform.position - player.transform.position;
+        targetPlayer = GameObject.FindGameObjectWithTag("Player");
     }
-
 
     void LateUpdate()
     {
+    
 
-        transform.position = player.transform.position + offset;
+        if (targetPlayer != null)
+        {
+          
+            transform.position = targetPlayer.transform.position + offset;
+
+            
+            transform.LookAt(targetPlayer.transform.position);
+        }
     }
 }
