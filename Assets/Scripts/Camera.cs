@@ -5,6 +5,7 @@ public class Camera : MonoBehaviour
     public GameObject targetPlayer;
     public Vector3 offset = new Vector3(0f, 10f, -5f);
     public float smoothSpeed = 0.125f;
+    internal static object current;
 
     void Start()
     {
