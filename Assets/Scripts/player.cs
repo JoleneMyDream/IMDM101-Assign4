@@ -5,9 +5,11 @@ public class BasicMovement : MonoBehaviour
     public float moveSpeed = 3f;
     public float rotationSpeed = 10f; 
     private Rigidbody rb;
+    private Animator animator;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         if (rb != null)
         {
@@ -26,7 +28,12 @@ public class BasicMovement : MonoBehaviour
        
         if (movement != Vector3.zero)
         {
+            animator.SetBool("IsWalking", true);
             RotateTowardsMovement(movement);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
         }
     }
 
