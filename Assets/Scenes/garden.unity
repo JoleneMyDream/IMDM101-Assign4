@@ -5650,6 +5650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1639630892
 GameObject:
   m_ObjectHideFlags: 0
@@ -5786,6 +5787,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639630892}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> parent of 3b4fc75 (adding ghost to the garden)
 =======
 >>>>>>> parent of 3b4fc75 (adding ghost to the garden)
 =======
