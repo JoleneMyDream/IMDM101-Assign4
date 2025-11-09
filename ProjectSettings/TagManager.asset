@@ -7,7 +7,6 @@ TagManager:
   - level
   - levelExit
   - Born
-  - Cake
   layers:
   - Default
   - TransparentFX
