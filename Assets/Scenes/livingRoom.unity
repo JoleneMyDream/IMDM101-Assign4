@@ -4503,6 +4503,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1146051905}
     m_Modifications:
+    - target: {fileID: 534459632783404349, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
+      propertyPath: m_SmallMeshCulling
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201156622780838331, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1201156622780838331, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666865025992152658, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666865025992152658, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666865025992152658, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 1666865025992152658, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.96
@@ -4513,7 +4537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1666865025992152658, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.03
+      value: -2.05
       objectReference: {fileID: 0}
     - target: {fileID: 1666865025992152658, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4554,6 +4578,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2047506449276898536, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
       insertIndex: -1
       addedObject: {fileID: 856533286}
+    - targetCorrespondingSourceObject: {fileID: 2047506449276898536, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 856533287}
+    - targetCorrespondingSourceObject: {fileID: 2047506449276898536, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 856533291}
+    - targetCorrespondingSourceObject: {fileID: 2047506449276898536, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 856533292}
   m_SourcePrefab: {fileID: 100100000, guid: 5c8c7ca7dceb0a741828d99422038859, type: 3}
 --- !u!4 &856533285 stripped
 Transform:
@@ -4567,11 +4600,70 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499856634}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 611fcf7857184a54899c88b8976145a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rotator
+--- !u!114 &856533287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499856634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d1b5a59a85a4f828ca62c3c3b91d6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOnPlayerTouch
+--- !u!114 &856533291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499856634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Benjathemaker.SimpleGemsAnim
+  isRotating: 1
+  rotateX: 0
+  rotateY: 1
+  rotateZ: 0
+  rotationSpeed: 90
+  isFloating: 1
+  useEasingForFloating: 0
+  floatHeight: 0.4
+  floatSpeed: 1
+  startScale: {x: 0, y: 0, z: 0}
+  endScale: {x: 0, y: 0, z: 0}
+  isScaling: 0
+  useEasingForScaling: 0
+  scaleLerpSpeed: 1
+--- !u!65 &856533292
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499856634}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.30847517, y: 0.5861663, z: 0.26059562}
+  m_Center: {x: -1.4105302e-10, y: 0.28871304, z: 0.005980279}
 --- !u!1001 &860837768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4904,6 +4996,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1103341825069583548, guid: 88f83155bbdc30048946c8644ee9c963, type: 3}
+      propertyPath: m_Height
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103341825069583548, guid: 88f83155bbdc30048946c8644ee9c963, type: 3}
+      propertyPath: m_Radius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103341825069583548, guid: 88f83155bbdc30048946c8644ee9c963, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4911,6 +5015,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 256338331260400107, guid: 88f83155bbdc30048946c8644ee9c963, type: 3}
       insertIndex: -1
       addedObject: {fileID: 962993308}
+    - targetCorrespondingSourceObject: {fileID: 256338331260400107, guid: 88f83155bbdc30048946c8644ee9c963, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 962993309}
+    - targetCorrespondingSourceObject: {fileID: 256338331260400107, guid: 88f83155bbdc30048946c8644ee9c963, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 962993310}
   m_SourcePrefab: {fileID: 100100000, guid: 88f83155bbdc30048946c8644ee9c963, type: 3}
 --- !u!4 &962993307 stripped
 Transform:
@@ -4924,11 +5034,49 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439083024}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 611fcf7857184a54899c88b8976145a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rotator
+--- !u!114 &962993309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439083024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d1b5a59a85a4f828ca62c3c3b91d6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOnPlayerTouch
+--- !u!114 &962993310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439083024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Benjathemaker.SimpleGemsAnim
+  isRotating: 1
+  rotateX: 0
+  rotateY: 1
+  rotateZ: 0
+  rotationSpeed: 90
+  isFloating: 1
+  useEasingForFloating: 0
+  floatHeight: 0.4
+  floatSpeed: 1
+  startScale: {x: 0, y: 0, z: 0}
+  endScale: {x: 0, y: 0, z: 0}
+  isScaling: 0
+  useEasingForScaling: 0
+  scaleLerpSpeed: 1
 --- !u!1001 &987375484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6467,6 +6615,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1146051905}
     m_Modifications:
+    - target: {fileID: 6960381617523792855, guid: 9457934fe0c66914a9b0e7dcadac76fc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960381617523792855, guid: 9457934fe0c66914a9b0e7dcadac76fc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7427147484886432802, guid: 9457934fe0c66914a9b0e7dcadac76fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.89
@@ -6518,6 +6674,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7807368074136856216, guid: 9457934fe0c66914a9b0e7dcadac76fc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1526155055}
+    - targetCorrespondingSourceObject: {fileID: 7807368074136856216, guid: 9457934fe0c66914a9b0e7dcadac76fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1526155056}
+    - targetCorrespondingSourceObject: {fileID: 7807368074136856216, guid: 9457934fe0c66914a9b0e7dcadac76fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1526155060}
+    - targetCorrespondingSourceObject: {fileID: 7807368074136856216, guid: 9457934fe0c66914a9b0e7dcadac76fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1526155061}
   m_SourcePrefab: {fileID: 100100000, guid: 9457934fe0c66914a9b0e7dcadac76fc, type: 3}
 --- !u!4 &1287364916 stripped
 Transform:
@@ -7400,11 +7565,70 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526155054}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 611fcf7857184a54899c88b8976145a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rotator
+--- !u!114 &1526155056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526155054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d1b5a59a85a4f828ca62c3c3b91d6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOnPlayerTouch
+--- !u!114 &1526155060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526155054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845c415f3181b4840ab566c40e714752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Benjathemaker.SimpleGemsAnim
+  isRotating: 1
+  rotateX: 0
+  rotateY: 1
+  rotateZ: 0
+  rotationSpeed: 90
+  isFloating: 1
+  useEasingForFloating: 0
+  floatHeight: 0.4
+  floatSpeed: 1
+  startScale: {x: 0, y: 0, z: 0}
+  endScale: {x: 0, y: 0, z: 0}
+  isScaling: 0
+  useEasingForScaling: 0
+  scaleLerpSpeed: 1
+--- !u!65 &1526155061
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526155054}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.38408437, y: 0.26484874, z: 0.2681727}
+  m_Center: {x: -0.0017610043, y: 0.13299508, z: 0}
 --- !u!1001 &1526401493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9340,7 +9564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -263, y: 141}
+  m_AnchoredPosition: {x: -235.3, y: 141}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1956811962
@@ -9363,7 +9587,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Pick a cake for your sister!"'
+  m_text: '"Pick a doll for your sister!"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
