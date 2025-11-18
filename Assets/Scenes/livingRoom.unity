@@ -1914,8 +1914,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34073da81fcc14160beb35e9bf6fae47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectFollower
-  followSpeed: 3
-  followDistance: 0.6
+  rotationSpeed: 60
+  rotationRadius: 1
+  heightOffset: 0
 --- !u!136 &318245204
 CapsuleCollider:
   m_ObjectHideFlags: 0
