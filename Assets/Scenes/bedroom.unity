@@ -810,15 +810,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d0958d2a40711a441af583beb71f5bf1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.23936604
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0958d2a40711a441af583beb71f5bf1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.221245
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0958d2a40711a441af583beb71f5bf1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.26852325
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0958d2a40711a441af583beb71f5bf1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -826,7 +826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0958d2a40711a441af583beb71f5bf1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.231
+      value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0958d2a40711a441af583beb71f5bf1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -989,18 +989,6 @@ MonoBehaviour:
   isScaling: 0
   useEasingForScaling: 0
   scaleLerpSpeed: 1
---- !u!114 &281818930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281818922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98d1b5a59a85a4f828ca62c3c3b91d6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DestroyOnPlayerTouch
 --- !u!65 &281818931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1020,8 +1008,62 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.93929, y: 2.2476525, z: 0.6685926}
+  m_Size: {x: 2, y: 2, z: 1.2}
   m_Center: {x: -0.00012901425, y: -0.047997653, z: -0.018846229}
+--- !u!114 &281818935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281818922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112d241deda1a4435abeba3ba0967043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::levelLoader
+--- !u!114 &281818936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281818922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34073da81fcc14160beb35e9bf6fae47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectFollower
+  rotationSpeed: 60
+  rotationRadius: 0.5
+  fixedHeight: 1
+--- !u!54 &281818937
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281818922}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &304696135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1152,6 +1194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clock
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e5b0c023ae30f04c81e40590c70ac4c, type: 3}
+      propertyPath: m_TagString
+      value: Key
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1161,10 +1207,16 @@ PrefabInstance:
       addedObject: {fileID: 281818926}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e5b0c023ae30f04c81e40590c70ac4c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 281818930}
+      addedObject: {fileID: 281818931}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e5b0c023ae30f04c81e40590c70ac4c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 281818931}
+      addedObject: {fileID: 281818936}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e5b0c023ae30f04c81e40590c70ac4c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 281818935}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e5b0c023ae30f04c81e40590c70ac4c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 281818937}
   m_SourcePrefab: {fileID: 100100000, guid: 1e5b0c023ae30f04c81e40590c70ac4c, type: 3}
 --- !u!1 &326641825 stripped
 GameObject:
@@ -1203,18 +1255,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ba9c7de018c488598e2babebab791f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::saveMe
---- !u!114 &326641830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326641825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 112d241deda1a4435abeba3ba0967043, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::levelLoader
 --- !u!54 &326641831
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2040,7 +2080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8716414403987919071, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.299
+      value: 6.92
       objectReference: {fileID: 0}
     - target: {fileID: 8716414403987919071, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2094,6 +2134,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8339888144014641765, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       insertIndex: -1
       addedObject: {fileID: 981220737}
+    - targetCorrespondingSourceObject: {fileID: 8339888144014641765, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 981220739}
   m_SourcePrefab: {fileID: 100100000, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
 --- !u!4 &626113572 stripped
 Transform:
@@ -2469,7 +2512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 251889413fcfbe841a4d11ea37dfe4fe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.67
+      value: 2.73
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 251889413fcfbe841a4d11ea37dfe4fe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2902,7 +2945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjectFollower
   rotationSpeed: 90
   rotationRadius: 2
-  heightOffset: 0
+  fixedHeight: 2
 --- !u!114 &981220737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2917,6 +2960,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DistanceDialog
   dialogBox: {fileID: 2009318526}
   showDistance: 3
+--- !u!114 &981220739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981220731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5130d7fcd96e244268bd991230d7fd55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostFloatWithFlip
+  floatDistance: 1
+  floatSpeed: 0.4
+  flipBasedOnDirection: 1
+  faceMovementDirection: 1
 --- !u!1001 &1000178986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3439,8 +3498,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectFollower
   rotationSpeed: 60
-  rotationRadius: 1
-  heightOffset: 0
+  rotationRadius: 0.5
+  fixedHeight: 1
 --- !u!65 &1126991878
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3606,6 +3665,7 @@ GameObject:
   - component: {fileID: 1271184599}
   - component: {fileID: 1271184598}
   - component: {fileID: 1271184597}
+  - component: {fileID: 1271184602}
   m_Layer: 0
   m_Name: levelExit
   m_TagString: levelExit
@@ -3699,12 +3759,24 @@ Transform:
   m_GameObject: {fileID: 1271184596}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.81, y: 0.777, z: 7.11}
-  m_LocalScale: {x: 1, y: 1, z: 0.2}
+  m_LocalPosition: {x: 8.71, y: 0.777, z: 7.11}
+  m_LocalScale: {x: 1.1205, y: 1.7947, z: 0.26298}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1271184602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271184596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112d241deda1a4435abeba3ba0967043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::levelLoader
 --- !u!1001 &1275842456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5245,7 +5317,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -266, y: 143}
+  m_AnchoredPosition: {x: -274, y: 142}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2009318528
@@ -5268,12 +5340,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '" Welcome !"
+  m_text: '"Welcome !"
 
     "Use WASD to walk, SPACE to jump!"
 
-    " Try to collect
-    the floating objects!"'
+    "Try to collect
+    the floating objects!"
+
+    "Pick Up the clock to unlock next scene!"
+
+    "Press
+    P to drop held items!"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5300,8 +5377,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5338,7 +5415,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -309.28778, w: -21.279968}
+  m_margin: {x: 0, y: 0, z: -346.05005, w: -21.279968}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5585,7 +5662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::camera
   targetPlayer: {fileID: 0}
-  offset: {x: 0, y: 1, z: -1}
+  offset: {x: 0, y: 5, z: -1}
   smoothSpeed: 0.125
 --- !u!1001 &2104004634
 PrefabInstance:
@@ -6572,9 +6649,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3435186749656109567, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 326641831}
-    - targetCorrespondingSourceObject: {fileID: 3435186749656109567, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 326641830}
     - targetCorrespondingSourceObject: {fileID: 3435186749656109567, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 326641829}

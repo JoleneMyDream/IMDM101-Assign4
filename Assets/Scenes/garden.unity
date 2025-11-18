@@ -6219,7 +6219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::camera
   targetPlayer: {fileID: 0}
-  offset: {x: 0, y: 20, z: -10}
+  offset: {x: 0, y: 30, z: -10}
   smoothSpeed: 0.125
 --- !u!1001 &977631810
 PrefabInstance:
@@ -6396,10 +6396,10 @@ PrefabInstance:
       addedObject: {fileID: 1118477397}
     - targetCorrespondingSourceObject: {fileID: 8339888144014641765, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1118477396}
+      addedObject: {fileID: 1118477399}
     - targetCorrespondingSourceObject: {fileID: 8339888144014641765, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1118477399}
+      addedObject: {fileID: 1118477400}
     - targetCorrespondingSourceObject: {fileID: 8623758867458315100, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1118477398}
@@ -6419,20 +6419,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8623758867458315100, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
   m_PrefabInstance: {fileID: 1118477392}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1118477396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118477393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34073da81fcc14160beb35e9bf6fae47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjectFollower
-  followSpeed: 3
-  followDistance: 0.6
 --- !u!136 &1118477397
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6484,6 +6470,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DistanceDialog
   dialogBox: {fileID: 2004509305}
   showDistance: 3
+--- !u!114 &1118477400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118477393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f1f407a5f46411a87be040f8723437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerGuide
+  player: {fileID: 0}
+  guideDistance: 1
+  guideHeight: 1
+  smoothSpeed: 2
+  faceMovementDirection: 1
+  activationDistance: 5
 --- !u!1001 &1174213823
 PrefabInstance:
   m_ObjectHideFlags: 0
