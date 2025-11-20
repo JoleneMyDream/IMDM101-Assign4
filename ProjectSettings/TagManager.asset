@@ -8,6 +8,7 @@ TagManager:
   - levelExit
   - Born
   - Key
+  - collectible
   layers:
   - Default
   - TransparentFX
