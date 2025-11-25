@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 using TMPro;
 
@@ -15,7 +16,7 @@ public class DestroyOnPlayerTouch : MonoBehaviour
         //allCollected = false;
     }
 
-    /*private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -23,7 +24,7 @@ public class DestroyOnPlayerTouch : MonoBehaviour
             count = count + 1;
             SetCountText();
         }
-    }*/
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -34,6 +35,7 @@ public class DestroyOnPlayerTouch : MonoBehaviour
             SetCountText();
         }
     }
+   
 
     void SetCountText() 
    {
@@ -44,3 +46,5 @@ public class DestroyOnPlayerTouch : MonoBehaviour
        }
    }
 }
+
+*/
