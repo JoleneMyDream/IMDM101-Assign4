@@ -12,7 +12,6 @@ public class BasicMovement : MonoBehaviour
 
     void Start()
     {
-        count = 0;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         if (rb != null)
