@@ -3,7 +3,6 @@ using UnityEngine;
 public class HotAirBalloon : MonoBehaviour
 {
     public float riseSpeed = 2f;
-  
 
     void Update()
     {
@@ -14,10 +13,16 @@ public class HotAirBalloon : MonoBehaviour
     {
         if (other.CompareTag("stopBalloon"))
         {
-           
+        
             enabled = false;
+            
 
-           
+          
+            BalloonCamera cameraScript = FindObjectOfType<BalloonCamera>();
+            if (cameraScript != null)
+            {
+                cameraScript.SwitchToPlayer();
+            }
         }
     }
 }

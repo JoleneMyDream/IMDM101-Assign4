@@ -270,10 +270,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BalloonCamera
   balloon: {fileID: 1806759621}
-  offset: {x: 10, y: 15, z: -10}
+  player: {fileID: 1260715082}
+  balloonOffset: {x: -10, y: 5, z: -10}
   horizontalAngle: 240
-  verticalAngle: 15
-  distance: 15
+  verticalAngle: 20
+  distance: 8
+  playerOffset: {x: 0, y: 3, z: -8}
 --- !u!1001 &158837450
 PrefabInstance:
   m_ObjectHideFlags: 0
