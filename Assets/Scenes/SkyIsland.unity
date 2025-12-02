@@ -275,7 +275,7 @@ MonoBehaviour:
   horizontalAngle: 240
   verticalAngle: 20
   distance: 8
-  playerOffset: {x: 0, y: 3, z: -8}
+  playerOffset: {x: 0, y: 8, z: -5}
 --- !u!1001 &158837450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2268,7 +2268,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2325,7 +2325,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -3174,6 +3174,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 015dba0cddef24f08b697e2f624e1ed4, type: 2}
+    - target: {fileID: 1980555800860532662, guid: d1a5096432363604a9505a029c13058e, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980555800860532662, guid: d1a5096432363604a9505a029c13058e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980555800860532662, guid: d1a5096432363604a9505a029c13058e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2660589249032858430, guid: d1a5096432363604a9505a029c13058e, type: 3}
       propertyPath: m_Name
       value: CrossPlains_Floating_Island_02
