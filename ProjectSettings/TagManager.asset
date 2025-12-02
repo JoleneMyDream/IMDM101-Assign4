@@ -4,11 +4,11 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - level
   - levelExit
   - Born
   - Key
   - collectible
+  - stopBalloon
   layers:
   - Default
   - TransparentFX
