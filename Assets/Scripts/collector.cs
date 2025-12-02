@@ -5,12 +5,14 @@ public class collector : MonoBehaviour
     private int count;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
+    public GameObject balloon;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         count = 0;
         SetCountText();
         winTextObject.SetActive(false);
+        balloon.SetActive(false);
     }
     void SetCountText() 
    {
@@ -18,6 +20,7 @@ public class collector : MonoBehaviour
        if (count >= 9)
        {
            winTextObject.SetActive(true);
+           balloon.SetActive(true);
        }
    }
 
