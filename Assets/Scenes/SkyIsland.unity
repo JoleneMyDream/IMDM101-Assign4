@@ -206,13 +206,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68744625}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.86602545, y: 0, z: 0, w: 0.49999994}
   m_LocalPosition: {x: 0, y: 1, z: -9.150001}
   m_LocalScale: {x: 1.1327, y: 0.98931, z: 1.2088526}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 120, y: 0, z: 0}
 --- !u!114 &68744629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,8 +269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a7e7cc08c474c618e66b893da6e81d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BalloonCamera
-  balloon: {fileID: 0}
-  offset: {x: 0, y: 5, z: -10}
+  balloon: {fileID: 1806759621}
+  offset: {x: -15, y: 5, z: -15}
 --- !u!1001 &158837450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2515,6 +2515,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HotAirBalloon
   riseSpeed: 2
+--- !u!4 &1806759621 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4076717627030934219, guid: 6f6c6d9820b2cb34ba942a8f7e20d888, type: 3}
+  m_PrefabInstance: {fileID: 1889468995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1840431386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2614,15 +2619,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4076717627030934219, guid: 6f6c6d9820b2cb34ba942a8f7e20d888, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.57
+      value: -24.22
       objectReference: {fileID: 0}
     - target: {fileID: 4076717627030934219, guid: 6f6c6d9820b2cb34ba942a8f7e20d888, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22.03
+      value: -28.84
       objectReference: {fileID: 0}
     - target: {fileID: 4076717627030934219, guid: 6f6c6d9820b2cb34ba942a8f7e20d888, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.73
+      value: -1.9
       objectReference: {fileID: 0}
     - target: {fileID: 4076717627030934219, guid: 6f6c6d9820b2cb34ba942a8f7e20d888, type: 3}
       propertyPath: m_LocalRotation.w
