@@ -10,9 +10,6 @@ public class BasicMovement : MonoBehaviour
     private Animator animator;
     private bool isGrounded; 
 
-    /*private int count;
-    public TextMeshProUGUI countText;*/
-
     void Start()
     {
         count = 0;
@@ -77,23 +74,4 @@ public class BasicMovement : MonoBehaviour
             }
         }
     }
-
-   /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("collectible"))
-        {
-            Destroy(other.gameObject);
-            count = count + 1;
-            SetCountText();
-        }
-    }
-
-    void SetCountText() 
-   {
-       countText.text =  "Count: " + count.ToString();
-       if (count >= 11)
-       {
-           countText.text =  "All foods collected!";
-       }
-   }*/
 }
