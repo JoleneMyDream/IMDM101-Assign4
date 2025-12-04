@@ -9,6 +9,7 @@ TagManager:
   - Key
   - collectible
   - stopBalloon
+  - Fall
   layers:
   - Default
   - TransparentFX
