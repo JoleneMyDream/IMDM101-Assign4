@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "IMDM101-Assign4.sln"
+    "dotnet.defaultSolution": "IMDM101Assign4.sln"
 }
