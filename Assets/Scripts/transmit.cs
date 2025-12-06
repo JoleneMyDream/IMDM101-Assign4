@@ -5,10 +5,10 @@ public class KeyTeleportTrigger : MonoBehaviour
     [SerializeField] private Transform[] objectsToTeleport = new Transform[2];
     [SerializeField] private Transform[] targetPositions = new Transform[2];
 
-    
-    void OnCollisionEnter(Collision collision) 
+    void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Key"))
+       
+        if (collision.gameObject.CompareTag("Player"))
         {
             TeleportObjects();
         }
