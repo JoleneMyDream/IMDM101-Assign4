@@ -43,6 +43,16 @@ public class BasicMovement : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
         }
+
+       //falling animation
+        if (rb.linearVelocity.y < 0)
+        {
+            animator.SetBool("IsFalling", true);
+        }
+        else
+        {
+            animator.SetBool("IsFalling", false);
+        }
     }
 
     void Jump()
