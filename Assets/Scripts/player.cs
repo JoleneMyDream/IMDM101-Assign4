@@ -10,7 +10,6 @@ public class BasicMovement : MonoBehaviour
     private Animator animator;
     private bool isGrounded; 
 
-
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -43,15 +42,6 @@ public class BasicMovement : MonoBehaviour
         else
         {
             animator.SetBool("IsWalking", false);
-        }
-        //falling animation
-        if (rb.linearVelocity.y < 0)
-        {
-            animator.SetBool("IsFalling", true);
-        }
-        else
-        {
-            animator.SetBool("IsFalling", false);
         }
     }
 
