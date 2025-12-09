@@ -544,7 +544,7 @@ MonoBehaviour:
   horizontalAngle: 240
   verticalAngle: 20
   distance: 8
-  playerOffset: {x: 0, y: 5, z: 0}
+  playerOffset: {x: 0, y: 8, z: -3}
 --- !u!1001 &158837450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2882,19 +2882,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3432968828008219611, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.88439536
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3432968828008219611, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3432968828008219611, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.46673843
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3432968828008219611, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3432968828008219611, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2902,7 +2902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3432968828008219611, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 55.646
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3432968828008219611, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -6666,7 +6666,7 @@ Transform:
   m_GameObject: {fileID: 1500493627}
   serializedVersion: 2
   m_LocalRotation: {x: 0.05586584, y: 0.99764293, z: -0.039099254, w: -0.0076681417}
-  m_LocalPosition: {x: 29.51471, y: 11.479996, z: 60.693535}
+  m_LocalPosition: {x: 29.5, y: 11.38, z: 60.7}
   m_LocalScale: {x: 0.26315618, y: 0.23974729, z: 0.28589725}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7841,7 +7841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5235574dce42a413e8f17406b095442a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HotAirBalloon
-  riseSpeed: 3
+  riseSpeed: 8
 --- !u!4 &1806759621 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4076717627030934219, guid: 6f6c6d9820b2cb34ba942a8f7e20d888, type: 3}
