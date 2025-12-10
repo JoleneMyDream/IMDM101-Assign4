@@ -10851,7 +10851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::camera
   targetPlayer: {fileID: 0}
-  offset: {x: 0, y: 6, z: -5}
+  offset: {x: 0, y: 5, z: -5}
   smoothSpeed: 0.125
 --- !u!1 &2065511548 stripped
 GameObject:
