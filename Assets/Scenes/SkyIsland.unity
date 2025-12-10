@@ -1708,6 +1708,7 @@ GameObject:
   - component: {fileID: 374243862}
   - component: {fileID: 374243861}
   - component: {fileID: 374243860}
+  - component: {fileID: 374243863}
   m_Layer: 0
   m_Name: bridge (2)
   m_TagString: Untagged
@@ -1786,6 +1787,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -4.362, y: 5.354, z: -5.111}
+--- !u!64 &374243863
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374243859}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6990060088367560311, guid: 02a2f7ba4ef86f44fb59e378f566e68f, type: 3}
 --- !u!1 &387627100
 GameObject:
   m_ObjectHideFlags: 0
