@@ -627,7 +627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &267799879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3802,7 +3802,7 @@ MonoBehaviour:
       text: 'This is the tutorial room. You can interact with any floating objects.
         To pick them up just walk into them. To drop them, use the key P. Find the
         ALARM CLOCK and bring it to the door to continue.  '
-      duration: 10
+      duration: 11
       drawAudio: 1
       lastCalculatedHeight: 100
       move: 0
@@ -5105,82 +5105,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11419828, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: fontSizeModifier
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 11422524, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_Text
-      value: Welcome to the game ^-^ !! Use WASD to move, SPACEBAR to jump. Walk
-        forward to meet your guide!
-      objectReference: {fileID: 0}
-    - target: {fileID: 11422524, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_FontData.m_BestFit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11422524, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 11422524, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11422524, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 11422524, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_FontData.m_RichText
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11422524, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11422524, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_FontData.m_VerticalOverflow
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11464564, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: queueLength
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 11464564, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
       propertyPath: characterController
       value: 
       objectReference: {fileID: 326641828}
-    - target: {fileID: 11484546, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_VerticalFit
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 22447206, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -225
-      objectReference: {fileID: 0}
-    - target: {fileID: 22447206, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 86
-      objectReference: {fileID: 0}
-    - target: {fileID: 22472304, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0.20000076
-      objectReference: {fileID: 0}
     - target: {fileID: 22472304, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22491844, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.88334
-      objectReference: {fileID: 0}
-    - target: {fileID: 22491844, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22491844, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5241,7 +5172,7 @@ MonoBehaviour:
     - audio: {fileID: 0}
       text: "Greetings! I'm your guide. I have great insight, keep me by your side
         and you\u2019ll always know what to do!"
-      duration: 10
+      duration: 7
       drawAudio: 1
       lastCalculatedHeight: 100
       move: 0
