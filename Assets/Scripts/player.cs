@@ -24,10 +24,9 @@ public class BasicMovement : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-
+        
         Vector3 movement = new Vector3(horizontal, 0f, vertical).normalized;
         transform.position += movement * moveSpeed * Time.deltaTime;
-
        
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
