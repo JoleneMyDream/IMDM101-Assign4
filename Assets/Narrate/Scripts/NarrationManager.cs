@@ -180,7 +180,7 @@ namespace Narrate {
                     if (interrupt) yield break;
                     //check for continue/skip button presses
                     if ((pressToContinue || pressToSkip) && (timer - lastTimePressed > 0.3f)) {
-                        if (Input.GetButtonUp(buttonName)) {
+                        if (Input.GetButtonUp("Submit")) {
                             lastTimePressed = timer;
                             if (pressToSkip && !skipPressed) {
                                 skipPressed = true;
@@ -209,7 +209,7 @@ namespace Narrate {
                 //Force player to hit the Continue button if necessarys
                 while (pressToContinue) {
                     if (interrupt) yield  break;
-                    if (Input.GetButtonUp(buttonName)) {
+                    if (Input.GetButtonUp("Submit")) {
                         subManager.Stop();
                         yield break;
                     }
@@ -251,7 +251,7 @@ namespace Narrate {
                     if (interrupt) yield break;
                     //check for and handle continue/skip button presses
                     if ((pressToContinue || pressToSkip) && (timer - lastTimePressed > 0.3f)) {
-                        if (Input.GetButtonUp(buttonName)) {
+                        if (Input.GetButtonUp("Submit")) {
                             lastTimePressed = timer;
                             if (pressToSkip && !skipPressed) {
                                 skipPressed = true;
@@ -281,7 +281,7 @@ namespace Narrate {
                 //Force player to hit the Continue button if they haven't and is required
                 while ((!continuePressed) && pressToContinue) {
                     if (interrupt) yield break;
-                    if (Input.GetButtonUp(buttonName)) {
+                    if (Input.GetButtonUp("Submit")) {
                         subManager.Stop();
                         src.Stop();
                         src.clip = null;
@@ -302,7 +302,7 @@ namespace Narrate {
         IEnumerator InteractionInputCheck() {
             while (true) {
                 //if press to continue or press to skip, interactions only register with triggers when nothing is being played
-                if (((!pressToContinue && !pressToSkip) || !isPlaying) && Input.GetButtonDown(buttonName)) {
+                if (((!pressToContinue && !pressToSkip) || !isPlaying) && Input.GetButtonDown("Submit")) {
                     if (InteractPressed!=null)
                         InteractPressed(this, new System.EventArgs());
                 }

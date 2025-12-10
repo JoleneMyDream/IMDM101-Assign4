@@ -13,7 +13,7 @@ public class BalloonCamera : MonoBehaviour
     [SerializeField] private float distance = 10f;
 
     
-    [SerializeField] private Vector3 playerOffset = new Vector3(0, 3, -8);
+    [SerializeField] private Vector3 playerOffset = new Vector3(0, 3, 0);
 
     private bool followBalloon = true;  
 
@@ -58,7 +58,7 @@ public class BalloonCamera : MonoBehaviour
             
             Vector3 targetPosition = player.position + playerOffset;
             transform.position = targetPosition;
-            transform.LookAt(player);
+            transform.rotation = Quaternion.LookRotation(player.position - transform.position, Vector3.up);
 
        
             Debug.DrawLine(transform.position, player.position, Color.blue);
@@ -71,7 +71,7 @@ public class BalloonCamera : MonoBehaviour
         if (followBalloon)  
         {
             followBalloon = false;
-            
+            transform.rotation = Quaternion.LookRotation(player.forward, Vector3.up);
         }
     }
 
