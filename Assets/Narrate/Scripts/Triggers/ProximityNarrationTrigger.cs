@@ -49,8 +49,11 @@ namespace Narrate {
                 Vector3 distance = triggeredBy.position - this.transform.position;
                 if (is2D)
                     distance.z = 0;
-                if (distance.magnitude <= proximity)
+                if (distance.magnitude <= proximity){
                     delayTimer += 0.33f;
+                    Trigger();
+
+                }
                 else if (timeMustBeConsecutive)
                     delayTimer = 0;
                 yield return new WaitForSeconds(.33f);

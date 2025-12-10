@@ -13,7 +13,7 @@ namespace Narrate {
         bool textmodeSettingBeforePressToContinue;
 
         [InitializeOnLoadMethod]
-        void FindAManager() {
+        static void FindAManager() {
             if (NarrationManager.instance == null) {
                 NarrationManager[] nms = (NarrationManager[])FindObjectsOfType<NarrationManager>();
                 if (nms.Length > 0)
