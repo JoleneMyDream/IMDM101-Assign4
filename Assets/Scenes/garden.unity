@@ -2320,7 +2320,7 @@ Transform:
   m_GameObject: {fileID: 258645276}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.04, y: -2.16, z: 1.33}
+  m_LocalPosition: {x: 7.66, y: -2.16, z: 3.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2354,7 +2354,7 @@ MonoBehaviour:
       move: 0
     LoopAudioForDuration: 0
     expanded: 1
-    lastCalculatedHeight: 256
+    lastCalculatedHeight: 196
     useSmartSubs: 0
   OnFailure: 0
   OnSuccess: 0
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   delayPlayingBy: 0
   is2D: 0
   triggeredBy: {fileID: 233772807}
-  proximity: 3
+  proximity: 2
   timeInProximityToTrigger: 0
   timeMustBeConsecutive: 0
 --- !u!1001 &260542044
@@ -7370,7 +7370,7 @@ MonoBehaviour:
   guideHeight: 1
   smoothSpeed: 2
   faceMovementDirection: 1
-  activationDistance: 5
+  activationDistance: 2
 --- !u!1001 &1153269156
 PrefabInstance:
   m_ObjectHideFlags: 0
