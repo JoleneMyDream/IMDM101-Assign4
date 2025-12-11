@@ -7013,7 +7013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3432968828008219611, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.63
+      value: 5.95
       objectReference: {fileID: 0}
     - target: {fileID: 3432968828008219611, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11233,7 +11233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::camera
   targetPlayer: {fileID: 0}
-  offset: {x: 0, y: 5, z: -5}
+  offset: {x: 0, y: 4, z: -4}
   smoothSpeed: 0.125
 --- !u!1 &2065511548 stripped
 GameObject:
