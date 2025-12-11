@@ -7102,7 +7102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::camera
   targetPlayer: {fileID: 0}
-  offset: {x: 0, y: 30, z: -10}
+  offset: {x: 0, y: 20, z: -15}
   smoothSpeed: 0.125
 --- !u!1001 &977631810
 PrefabInstance:
@@ -7807,7 +7807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22472304, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1.199997
+      value: -1.1999817
       objectReference: {fileID: 0}
     - target: {fileID: 22472304, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
       propertyPath: m_AnchoredPosition.y

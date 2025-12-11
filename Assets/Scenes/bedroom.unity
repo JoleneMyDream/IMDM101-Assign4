@@ -5823,7 +5823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::camera
   targetPlayer: {fileID: 0}
-  offset: {x: 0, y: 5, z: -1}
+  offset: {x: 0, y: 4, z: -4}
   smoothSpeed: 0.125
 --- !u!1001 &2116517569
 PrefabInstance:
