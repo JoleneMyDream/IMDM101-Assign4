@@ -5,9 +5,13 @@ public class TeleportFourObjects : MonoBehaviour
     [SerializeField] private Transform[] objectsToTeleport = new Transform[6];
     [SerializeField] private Transform[] targetPositions = new Transform[6];
     [SerializeField] private bool hideAtStart = true;
+    public GameObject winTextObject;
+    public GameObject trophy;
 
     void Start()
     {
+        winTextObject.SetActive(false);
+        trophy.SetActive(false);
         if (hideAtStart)
         {
             SetObjectsActive(false);
@@ -18,6 +22,8 @@ public class TeleportFourObjects : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            winTextObject.SetActive(true);
+            trophy.SetActive(true);
             TeleportAllObjects();
         }
     }
