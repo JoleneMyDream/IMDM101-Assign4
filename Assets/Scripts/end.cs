@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class TeleportFourObjects : MonoBehaviour
 {
-    [SerializeField] private Transform[] objectsToTeleport = new Transform[4];
-    [SerializeField] private Transform[] targetPositions = new Transform[4];
+    [SerializeField] private Transform[] objectsToTeleport = new Transform[6];
+    [SerializeField] private Transform[] targetPositions = new Transform[6];
     [SerializeField] private bool hideAtStart = true;
 
     void Start()
