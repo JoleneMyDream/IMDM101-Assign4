@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8716414403987919071, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.82
+      value: -5.94
       objectReference: {fileID: 0}
     - target: {fileID: 8716414403987919071, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -145,11 +145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8716414403987919071, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 64.29
+      value: 63.42
       objectReference: {fileID: 0}
     - target: {fileID: 8716414403987919071, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.059097957
+      value: 0.14041142
       objectReference: {fileID: 0}
     - target: {fileID: 8716414403987919071, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_LocalRotation.x
@@ -157,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8716414403987919071, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9982523
+      value: 0.99009323
       objectReference: {fileID: 0}
     - target: {fileID: 8716414403987919071, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_LocalRotation.z
@@ -169,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8716414403987919071, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 186.776
+      value: 163.857
       objectReference: {fileID: 0}
     - target: {fileID: 8716414403987919071, guid: 21304eaf71c81464aa4b9ef3b5665fce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -692,6 +692,76 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8697000814560354808, guid: d97690d43e1b27b47b644c6d78f9a2f1, type: 3}
+--- !u!1 &186243000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 186243001}
+  - component: {fileID: 186243002}
+  m_Layer: 0
+  m_Name: ghost text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &186243001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186243000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.27, y: 7.98, z: -15.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1487397536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &186243002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186243000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b64140504f9afa49890af388446118e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Narrate.ProximityNarrationTrigger
+  UseNarrationList: 0
+  narrationList: {fileID: 0}
+  theNarration:
+    busyBehavior: 0
+    singleAudio_MultiSub: 0
+    mainAudio: {fileID: 0}
+    phrases:
+    - audio: {fileID: 0}
+      text: "Thank you for helping me find my friend! You\u2019re awesome!"
+      duration: 0
+      drawAudio: 1
+      lastCalculatedHeight: 100
+      move: 0
+    LoopAudioForDuration: 0
+    expanded: 1
+    lastCalculatedHeight: 256
+    useSmartSubs: 0
+  OnFailure: 0
+  OnSuccess: 2
+  ResetCooldown: 0
+  delayPlayingBy: 0
+  is2D: 0
+  triggeredBy: {fileID: 1260715082}
+  proximity: 1
+  timeInProximityToTrigger: 0
+  timeMustBeConsecutive: 0
 --- !u!1 &204520137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,6 +1360,77 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1013253052236951348, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
   m_PrefabInstance: {fileID: 300831532}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &307168060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 307168061}
+  - component: {fileID: 307168062}
+  m_Layer: 0
+  m_Name: 'picnic guy text '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &307168061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307168060}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.54, y: 7.78, z: -18.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1487397536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &307168062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307168060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b64140504f9afa49890af388446118e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Narrate.ProximityNarrationTrigger
+  UseNarrationList: 0
+  narrationList: {fileID: 0}
+  theNarration:
+    busyBehavior: 0
+    singleAudio_MultiSub: 0
+    mainAudio: {fileID: 0}
+    phrases:
+    - audio: {fileID: 0}
+      text: "Hey thanks so much for helping me earlier! I don\u2019t know what I
+        would\u2019ve done without you"
+      duration: 0
+      drawAudio: 1
+      lastCalculatedHeight: 100
+      move: 0
+    LoopAudioForDuration: 0
+    expanded: 1
+    lastCalculatedHeight: 196
+    useSmartSubs: 0
+  OnFailure: 0
+  OnSuccess: 2
+  ResetCooldown: 0
+  delayPlayingBy: 0
+  is2D: 0
+  triggeredBy: {fileID: 1260715082}
+  proximity: 1
+  timeInProximityToTrigger: 0
+  timeMustBeConsecutive: 0
 --- !u!1001 &307807205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1717,7 +1858,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 19588385245968726, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_Name
-      value: ghost ("teleported")
+      value: ghost
       objectReference: {fileID: 0}
     - target: {fileID: 19588385245968726, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_TagString
@@ -1725,19 +1866,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.84
+      value: -1.07
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.24
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 67.67
+      value: 65.63
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.56920505
+      value: -0.27785978
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1745,7 +1886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.8221956
+      value: 0.9606216
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1757,7 +1898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 249.39
+      value: 212.265
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2315,6 +2456,77 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429399397}
   m_Mesh: {fileID: -8697000814560354808, guid: d97690d43e1b27b47b644c6d78f9a2f1, type: 3}
+--- !u!1 &442006804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 442006805}
+  - component: {fileID: 442006806}
+  m_Layer: 0
+  m_Name: guide text (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &442006805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442006804}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.93, y: 13.25, z: 6.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1487397536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &442006806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442006804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b64140504f9afa49890af388446118e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Narrate.ProximityNarrationTrigger
+  UseNarrationList: 0
+  narrationList: {fileID: 0}
+  theNarration:
+    busyBehavior: 0
+    singleAudio_MultiSub: 0
+    mainAudio: {fileID: 0}
+    phrases:
+    - audio: {fileID: 0}
+      text: That looks like a jump pad but a little different, touch it and see what
+        it does!
+      duration: 0
+      drawAudio: 1
+      lastCalculatedHeight: 100
+      move: 0
+    LoopAudioForDuration: 0
+    expanded: 1
+    lastCalculatedHeight: 196
+    useSmartSubs: 0
+  OnFailure: 0
+  OnSuccess: 2
+  ResetCooldown: 0
+  delayPlayingBy: 0
+  is2D: 0
+  triggeredBy: {fileID: 1260715082}
+  proximity: 8
+  timeInProximityToTrigger: 0
+  timeMustBeConsecutive: 0
 --- !u!1 &463481053 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 19588385245968726, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
@@ -3495,9 +3707,6 @@ PrefabInstance:
       addedObject: {fileID: 1260715080}
     - targetCorrespondingSourceObject: {fileID: 3435186749656109567, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1260715079}
-    - targetCorrespondingSourceObject: {fileID: 3435186749656109567, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1260715078}
     - targetCorrespondingSourceObject: {fileID: 3435186749656109567, guid: bc2701a3bb6ff4649b7ac0466ea514e7, type: 3}
       insertIndex: -1
@@ -3903,6 +4112,76 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8470049373670364707, guid: d97690d43e1b27b47b644c6d78f9a2f1, type: 3}
+--- !u!1 &801898773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 801898774}
+  - component: {fileID: 801898775}
+  m_Layer: 0
+  m_Name: 'Sister text '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &801898774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801898773}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.25, y: 8.04, z: -15.48}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1487397536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &801898775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801898773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b64140504f9afa49890af388446118e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Narrate.ProximityNarrationTrigger
+  UseNarrationList: 0
+  narrationList: {fileID: 0}
+  theNarration:
+    busyBehavior: 0
+    singleAudio_MultiSub: 0
+    mainAudio: {fileID: 0}
+    phrases:
+    - audio: {fileID: 0}
+      text: I appreciate how you always know what to do to cheer me up!
+      duration: 0
+      drawAudio: 1
+      lastCalculatedHeight: 100
+      move: 0
+    LoopAudioForDuration: 0
+    expanded: 1
+    lastCalculatedHeight: 196
+    useSmartSubs: 0
+  OnFailure: 0
+  OnSuccess: 2
+  ResetCooldown: 0
+  delayPlayingBy: 0
+  is2D: 0
+  triggeredBy: {fileID: 1260715082}
+  proximity: 1
+  timeInProximityToTrigger: 0
+  timeMustBeConsecutive: 0
 --- !u!1 &813333044
 GameObject:
   m_ObjectHideFlags: 0
@@ -4242,15 +4521,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11464564, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
       propertyPath: queueLength
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 11464564, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
       propertyPath: characterController
       value: 
-      objectReference: {fileID: 1260715079}
+      objectReference: {fileID: 1260715078}
     - target: {fileID: 22472304, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22491844, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4574,7 +4857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 34.4
+      value: 33.23
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4582,7 +4865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.8
+      value: 37.97
       objectReference: {fileID: 0}
     - target: {fileID: 796652407307068396, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4719,7 +5002,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 19588385245968726, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_Name
-      value: ghost
+      value: ghost ("teleported")
       objectReference: {fileID: 0}
     - target: {fileID: 19588385245968726, guid: 8ee08d04ad5df46fbb2e97260b63420b, type: 3}
       propertyPath: m_IsActive
@@ -4812,7 +5095,7 @@ Transform:
   m_GameObject: {fileID: 971283067}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.82, y: 4.72, z: 13.37}
+  m_LocalPosition: {x: -29.49, y: 4.72, z: 13.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4838,7 +5121,7 @@ MonoBehaviour:
     mainAudio: {fileID: 0}
     phrases:
     - audio: {fileID: 0}
-      text: you should cross the bridge
+      text: I think that ghost might need your help, try talking to it!
       duration: 0
       drawAudio: 1
       lastCalculatedHeight: 100
@@ -4848,12 +5131,12 @@ MonoBehaviour:
     lastCalculatedHeight: 196
     useSmartSubs: 0
   OnFailure: 0
-  OnSuccess: 0
+  OnSuccess: 2
   ResetCooldown: 0
   delayPlayingBy: 0
   is2D: 0
   triggeredBy: {fileID: 1260715082}
-  proximity: 2
+  proximity: 2.5
   timeInProximityToTrigger: 0
   timeMustBeConsecutive: 0
 --- !u!1001 &990974707
@@ -5018,6 +5301,78 @@ Transform:
   - {fileID: 1022703895}
   m_Father: {fileID: 1833402262}
   m_LocalEulerAnglesHint: {x: 4.425, y: 181.13, z: -6.44}
+--- !u!1 &1002433596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1002433597}
+  - component: {fileID: 1002433598}
+  m_Layer: 0
+  m_Name: guide text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1002433597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002433596}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.26, y: 6.24, z: 16.91}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1487397536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1002433598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002433596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b64140504f9afa49890af388446118e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Narrate.ProximityNarrationTrigger
+  UseNarrationList: 0
+  narrationList: {fileID: 0}
+  theNarration:
+    busyBehavior: 1
+    singleAudio_MultiSub: 0
+    mainAudio: {fileID: 0}
+    phrases:
+    - audio: {fileID: 0}
+      text: "It doesn\u2019t seem like the ghost\u2019s friend is here. Be careful
+        not to fall off these islands, if you fall more than 3 times you\u2019ll
+        start back in your bedroom! "
+      duration: 0
+      drawAudio: 1
+      lastCalculatedHeight: 100
+      move: 0
+    LoopAudioForDuration: 0
+    expanded: 1
+    lastCalculatedHeight: 196
+    useSmartSubs: 0
+  OnFailure: 0
+  OnSuccess: 2
+  ResetCooldown: 0
+  delayPlayingBy: 0
+  is2D: 0
+  triggeredBy: {fileID: 1260715082}
+  proximity: 2.5
+  timeInProximityToTrigger: 0
+  timeMustBeConsecutive: 0
 --- !u!1 &1022703894
 GameObject:
   m_ObjectHideFlags: 0
@@ -5275,6 +5630,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1833402262}
     m_Modifications:
+    - target: {fileID: -5998639011202826041, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 102357371106852064, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -5291,6 +5650,26 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 50632e0673cb04e4ba4311ab2250fb4f, type: 2}
+    - target: {fileID: 893105971421246344, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 893105971421246344, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 893105971421246344, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9571545
+      objectReference: {fileID: 0}
+    - target: {fileID: 893105971421246344, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.28957787
+      objectReference: {fileID: 0}
+    - target: {fileID: 893105971421246344, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -33.665
+      objectReference: {fileID: 0}
     - target: {fileID: 1013253052236951348, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1327
@@ -5355,6 +5734,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 015dba0cddef24f08b697e2f624e1ed4, type: 2}
+    - target: {fileID: 1637708194091427209, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637708194091427209, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.96
+      objectReference: {fileID: 0}
     - target: {fileID: 1643616203493046154, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -5370,6 +5757,14 @@ PrefabInstance:
     - target: {fileID: 3996097977538796073, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347451800332190550, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347451800332190550, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.98
       objectReference: {fileID: 0}
     - target: {fileID: 4810924955346584930, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -5403,6 +5798,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 37476ace40a164fc28949f431bd942f0, type: 2}
+    - target: {fileID: 5924842922057284427, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924842922057284427, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.89
+      objectReference: {fileID: 0}
     - target: {fileID: 6242193943595082907, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -5415,6 +5818,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 015dba0cddef24f08b697e2f624e1ed4, type: 2}
+    - target: {fileID: 7275231013988279551, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275231013988279551, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.33
+      objectReference: {fileID: 0}
     - target: {fileID: 7429311972334923147, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -5431,6 +5842,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: f72f07fd9867a4bd58aed078812c69d4, type: 2}
+    - target: {fileID: 7720808801327347223, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7720808801327347223, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.03
+      objectReference: {fileID: 0}
     - target: {fileID: 7896600149599936210, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5477,11 +5896,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 50632e0673cb04e4ba4311ab2250fb4f, type: 2}
     - target: {fileID: 8625326503341943900, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.1
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 8625326503341943900, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.83
+      value: -2.63
       objectReference: {fileID: 0}
     - target: {fileID: 8969269428504489222, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -5966,6 +6385,76 @@ Transform:
   - {fileID: 429399398}
   m_Father: {fileID: 1833402262}
   m_LocalEulerAnglesHint: {x: 4.425, y: 181.13, z: -6.44}
+--- !u!1 &1183540458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1183540459}
+  - component: {fileID: 1183540460}
+  m_Layer: 0
+  m_Name: guide text (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1183540459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183540458}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.63, y: 4.21, z: -21.53}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1487397536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1183540460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183540458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b64140504f9afa49890af388446118e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Narrate.ProximityNarrationTrigger
+  UseNarrationList: 0
+  narrationList: {fileID: 0}
+  theNarration:
+    busyBehavior: 0
+    singleAudio_MultiSub: 0
+    mainAudio: {fileID: 0}
+    phrases:
+    - audio: {fileID: 0}
+      text: Looks like it teleported you! Keep going!
+      duration: 0
+      drawAudio: 1
+      lastCalculatedHeight: 100
+      move: 0
+    LoopAudioForDuration: 0
+    expanded: 1
+    lastCalculatedHeight: 196
+    useSmartSubs: 0
+  OnFailure: 0
+  OnSuccess: 2
+  ResetCooldown: 0
+  delayPlayingBy: 0
+  is2D: 0
+  triggeredBy: {fileID: 1260715082}
+  proximity: 2
+  timeInProximityToTrigger: 0
+  timeMustBeConsecutive: 0
 --- !u!1 &1187606288
 GameObject:
   m_ObjectHideFlags: 0
@@ -6529,18 +7018,6 @@ MonoBehaviour:
   moveSpeed: 4
   rotationSpeed: 10
   jumpForce: 5
---- !u!114 &1260715079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260715075}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43ba9c7de018c488598e2babebab791f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::saveMe
 --- !u!54 &1260715080
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7320,76 +7797,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359660819}
   m_Mesh: {fileID: 8470049373670364707, guid: d97690d43e1b27b47b644c6d78f9a2f1, type: 3}
---- !u!1 &1400330835
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1400330836}
-  - component: {fileID: 1400330837}
-  m_Layer: 0
-  m_Name: friend ghost text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1400330836
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400330835}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.51, y: 8.35, z: -11.69}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1487397536}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1400330837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400330835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b64140504f9afa49890af388446118e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Narrate.ProximityNarrationTrigger
-  UseNarrationList: 0
-  narrationList: {fileID: 0}
-  theNarration:
-    busyBehavior: 0
-    singleAudio_MultiSub: 0
-    mainAudio: {fileID: 0}
-    phrases:
-    - audio: {fileID: 0}
-      text: 'friend: you guys found me!'
-      duration: 0
-      drawAudio: 1
-      lastCalculatedHeight: 100
-      move: 0
-    LoopAudioForDuration: 0
-    expanded: 1
-    lastCalculatedHeight: 196
-    useSmartSubs: 0
-  OnFailure: 0
-  OnSuccess: 0
-  ResetCooldown: 0
-  delayPlayingBy: 0
-  is2D: 0
-  triggeredBy: {fileID: 1260715082}
-  proximity: 2
-  timeInProximityToTrigger: 0
-  timeMustBeConsecutive: 0
 --- !u!1 &1413339485
 GameObject:
   m_ObjectHideFlags: 0
@@ -7830,9 +8237,15 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 971283068}
+  - {fileID: 1834316242}
   - {fileID: 1968788858}
-  - {fileID: 1400330836}
-  - {fileID: 1819671357}
+  - {fileID: 1002433597}
+  - {fileID: 1633131986}
+  - {fileID: 442006805}
+  - {fileID: 1183540459}
+  - {fileID: 186243001}
+  - {fileID: 801898774}
+  - {fileID: 307168061}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500493627
@@ -8576,6 +8989,77 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &1633131985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1633131986}
+  - component: {fileID: 1633131987}
+  m_Layer: 0
+  m_Name: guide text (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1633131986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633131985}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.33, y: 6.24, z: 16.87}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1487397536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1633131987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633131985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b64140504f9afa49890af388446118e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Narrate.ProximityNarrationTrigger
+  UseNarrationList: 0
+  narrationList: {fileID: 0}
+  theNarration:
+    busyBehavior: 0
+    singleAudio_MultiSub: 0
+    mainAudio: {fileID: 0}
+    phrases:
+    - audio: {fileID: 0}
+      text: 'That blue thing looks like a jump pad, try using it to get to the next
+        island. '
+      duration: 0
+      drawAudio: 1
+      lastCalculatedHeight: 100
+      move: 0
+    LoopAudioForDuration: 0
+    expanded: 1
+    lastCalculatedHeight: 196
+    useSmartSubs: 0
+  OnFailure: 0
+  OnSuccess: 2
+  ResetCooldown: 0
+  delayPlayingBy: 0
+  is2D: 0
+  triggeredBy: {fileID: 1260715082}
+  proximity: 2.5
+  timeInProximityToTrigger: 0
+  timeMustBeConsecutive: 0
 --- !u!1 &1635117369 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5308363571496718595, guid: 07b69e264410fe54c8640fb346c86ece, type: 3}
@@ -9303,76 +9787,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1819671356
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1819671357}
-  - component: {fileID: 1819671358}
-  m_Layer: 0
-  m_Name: ghost text (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1819671357
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819671356}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.86, y: 8.35, z: -15.66}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1487397536}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1819671358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819671356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b64140504f9afa49890af388446118e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Narrate.ProximityNarrationTrigger
-  UseNarrationList: 0
-  narrationList: {fileID: 0}
-  theNarration:
-    busyBehavior: 0
-    singleAudio_MultiSub: 0
-    mainAudio: {fileID: 0}
-    phrases:
-    - audio: {fileID: 0}
-      text: thanks for helping me find my friend
-      duration: 0
-      drawAudio: 1
-      lastCalculatedHeight: 100
-      move: 0
-    LoopAudioForDuration: 0
-    expanded: 1
-    lastCalculatedHeight: 196
-    useSmartSubs: 0
-  OnFailure: 0
-  OnSuccess: 0
-  ResetCooldown: 0
-  delayPlayingBy: 0
-  is2D: 0
-  triggeredBy: {fileID: 1260715082}
-  proximity: 2
-  timeInProximityToTrigger: 0
-  timeMustBeConsecutive: 0
 --- !u!1 &1823789061
 GameObject:
   m_ObjectHideFlags: 0
@@ -9535,6 +9949,77 @@ Transform:
   - {fileID: 1991649230}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1834316241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1834316242}
+  - component: {fileID: 1834316243}
+  m_Layer: 0
+  m_Name: guide text (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1834316242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834316241}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -28.27, y: 4.08, z: 4.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1487397536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1834316243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834316241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b64140504f9afa49890af388446118e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Narrate.ProximityNarrationTrigger
+  UseNarrationList: 0
+  narrationList: {fileID: 0}
+  theNarration:
+    busyBehavior: 0
+    singleAudio_MultiSub: 0
+    mainAudio: {fileID: 0}
+    phrases:
+    - audio: {fileID: 0}
+      text: "This way is a little difficult, are you sure you\u2019re up for the
+        challenge?"
+      duration: 0
+      drawAudio: 1
+      lastCalculatedHeight: 100
+      move: 0
+    LoopAudioForDuration: 0
+    expanded: 1
+    lastCalculatedHeight: 196
+    useSmartSubs: 0
+  OnFailure: 0
+  OnSuccess: 2
+  ResetCooldown: 0
+  delayPlayingBy: 0
+  is2D: 0
+  triggeredBy: {fileID: 1260715082}
+  proximity: 2
+  timeInProximityToTrigger: 0
+  timeMustBeConsecutive: 0
 --- !u!1001 &1840431386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10500,7 +10985,7 @@ Transform:
   m_GameObject: {fileID: 1968788857}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.77, y: 7.02, z: 17.55}
+  m_LocalPosition: {x: -25.11, y: 4.32, z: 15.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10526,7 +11011,8 @@ MonoBehaviour:
     mainAudio: {fileID: 0}
     phrases:
     - audio: {fileID: 0}
-      text: help me find my friend, there's a jump pad behind me use that
+      text: "I can\u2019t find my friend. Can you help me look for him? He might
+        be on one of the other islands."
       duration: 0
       drawAudio: 1
       lastCalculatedHeight: 100
@@ -10536,7 +11022,7 @@ MonoBehaviour:
     lastCalculatedHeight: 196
     useSmartSubs: 0
   OnFailure: 0
-  OnSuccess: 0
+  OnSuccess: 2
   ResetCooldown: 0
   delayPlayingBy: 0
   is2D: 0
